@@ -1,0 +1,293 @@
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+License 'RTL_Compiler_Ultra' (main version: 14.2, alternate version: 14.2) checkout failed.
+Checking out license 'Genus_Synthesis'... (0 seconds elapsed)
+Reading GUI preferences file '/home/student3/.cadence/rc.gui'.
+Finished loading tool scripts (5 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+          Version RC14.27 - v14.20-s064_1 (64-bit), built Feb 26 2016
+
+
+Copyright notice: Copyright 1997-2015 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+WARNING: This version of RC is 2421 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  base_mode
+            design  disable_power_mode_factorization
+            design  dp_perform_rewriting_operations
+            design  lp_clock_gating_hierarchical
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  gint_has_connected_pg_pin
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+            libpin  q_pin_of_d_pin
+               net  hier_net
+               net  logic0_driven
+               net  logic1_driven
+      power_domain  library_domain_by_mode
+      power_domain  shutoff_signal
+      power_domain  shutoff_signal_polarity
+              root  auto_ungroup_min_effort
+              root  constant_prop_through_iso_cell
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  driver_for_unloaded_ports
+              root  enable_parallel_iopt
+              root  enc_in_place_opt
+              root  enc_opt_drv
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  hdl_use_params_in_cell_search
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  lp_clock_gating_hierarchical
+              root  lp_insert_clock_gating_incremental
+              root  lp_iopt_mvt_multipass_flow
+              root  lp_multi_vt_optimization_effort
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  power_optimization_effort
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+         subdesign  lp_clock_gating_hierarchical
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+Sourcing '../Scripts/MyModule_syn.tcl' (Thu Oct 13 18:34:58 +0300 2022)...
+Sourcing '/home/student3/Bezrukov_V/Digital_ASIC/Scripts/X-FAB_typ.tcl' (Thu Oct 13 18:34:58 +0300 2022)...
+  Setting attribute of root '/': 'lib_search_path' = /Cadence/Libs/X_FAB/XKIT/xt018/diglibs/D_CELLS_5V/v5_0/liberty_LP5MOS_MOS5/v5_0_0/PVT_5_00V_range
+
+  Message Summary for Library D_CELLS_5V_LP5MOS_MOS5_typ_5_00V_25C.lib:
+  *********************************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 84
+  *********************************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 5.000000, 25.000000) in library 'D_CELLS_5V_LP5MOS_MOS5_typ_5_00V_25C.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LGCN_5VX1'
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+  Clock gating cell 'LGCN_5VX1' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LGCN_5VX2'
+  Clock gating cell 'LGCN_5VX2' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LGCN_5VX4'
+  Clock gating cell 'LGCN_5VX4' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LGCP_5VX1'
+  Clock gating cell 'LGCP_5VX1' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LGCP_5VX2'
+  Clock gating cell 'LGCP_5VX2' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LGCP_5VX4'
+  Clock gating cell 'LGCP_5VX4' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSGCN_5VX1'
+  Clock gating cell 'LSGCN_5VX1' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSGCN_5VX2'
+  Clock gating cell 'LSGCN_5VX2' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSGCN_5VX4'
+  Clock gating cell 'LSGCN_5VX4' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSGCP_5VX1'
+  Clock gating cell 'LSGCP_5VX1' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSGCP_5VX2'
+  Clock gating cell 'LSGCP_5VX2' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSGCP_5VX4'
+  Clock gating cell 'LSGCP_5VX4' does not contain latch enable definition.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSOGCN_5VX1'
+Warning : Invalid pin name used. [LBR-146]
+        : Invalid pin-name (IQ) referenced in libcell LSOGCN_5VX1
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSOGCN_5VX2'
+Warning : Invalid pin name used. [LBR-146]
+        : Invalid pin-name (IQ) referenced in libcell LSOGCN_5VX2
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSOGCN_5VX4'
+Warning : Invalid pin name used. [LBR-146]
+        : Invalid pin-name (IQ) referenced in libcell LSOGCN_5VX4
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSOGCP_5VX1'
+Warning : Invalid pin name used. [LBR-146]
+        : Invalid pin-name (IQ) referenced in libcell LSOGCP_5VX1
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSOGCP_5VX2'
+Warning : Invalid pin name used. [LBR-146]
+        : Invalid pin-name (IQ) referenced in libcell LSOGCP_5VX2
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'LSOGCP_5VX4'
+Warning : Invalid pin name used. [LBR-146]
+        : Invalid pin-name (IQ) referenced in libcell LSOGCP_5VX4
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLN2_5V' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLN2_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLN5_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLN5_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLNP2_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLNP2_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLP2_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLP2_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLP5_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNACELLP5_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP15_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP15_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP25_5V' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP25_5V' must have an output pin.
+  Setting attribute of root '/': 'library' = D_CELLS_5V_LP5MOS_MOS5_typ_5_00V_25C.lib
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'core_5v' read already, this site in file '/Cadence/Libs/X_FAB/XKIT/xt018/diglibs/D_CELLS_5V/v5_0/LEF/v5_0_1/xt018_xx43_MET4_METMID_METTHK_D_CELLS_5V_mprobe.lef' is ignored.
+
+  According to lef_library, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'OFFSET' parameter is missing for layer 'MET1' [line 211 in file /Cadence/Libs/X_FAB/XKIT/xt018/cadence/v7_0/techLEF/v7_0_1_1/xt018_xx43_MET4_METMID_METTHK.lef]
+        : Check the parameter in technology section.
+Warning : Wire parameter is missing. [PHYS-15]
+        : 'OFFSET' parameter is missing for layer 'MET3' [line 272 in file /Cadence/Libs/X_FAB/XKIT/xt018/cadence/v7_0/techLEF/v7_0_1_1/xt018_xx43_MET4_METMID_METTHK.lef]
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.23, 3) of 'WIDTH' for layers 'MET1' and 'METTPL' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.61, 6.3) of 'PITCH' for layers 'MET3' and 'METTPL' is too large.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.23, 2.5) of 'MINSPACING' for layers 'MET1' and 'METTPL' is too large.
+  Library has 141 usable logic and 48 usable sequential lib-cells.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'D_CELLS_5V_LP5MOS_MOS5_typ_5_00V_25C.lib', Total cells: 304, Unusable cells: 113.
+	List of unusable cells: 'DLHST_5VX1 DLHRT_5VX1 DLHT_5VX1 DLLST_5VX1 DLLRT_5VX1 DLLT_5VX1 LGCN_5VX1 LGCN_5VX2 LGCN_5VX4 LGCP_5VX1 ... and others.'
+        : For more information, refer to 'Cells Identified as Unusable' in the RC User Guide. The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+Warning : Marking library cell 'avoid'. [PHYS-103]
+        : The library cell 'CLKVBUF_5V' was marked 'avoid' because there was no physical data in the LEF file.
+        : To prevent the library cell from being set to 'avoid', set attribute 'lib_lef_consistency_check_enable' to 'false'.
+  Setting attribute of root '/': 'lef_library' = /Cadence/Libs/X_FAB/XKIT/xt018/cadence/v7_0/techLEF/v7_0_1_1/xt018_xx43_MET4_METMID_METTHK.lef /Cadence/Libs/X_FAB/XKIT/xt018/diglibs/D_CELLS_5V/v5_0/LEF/v5_0_1/xt018_D_CELLS_5V.lef /Cadence/Libs/X_FAB/XKIT/xt018/diglibs/D_CELLS_5V/v5_0/LEF/v5_0_1/xt018_xx43_MET4_METMID_METTHK_D_CELLS_5V_mprobe.lef
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.23, 3) of 'WIDTH' for layers 'M1' and 'M6' is too large.
+  Setting attribute of root '/': 'cap_table_file' = /Cadence/Libs/X_FAB/XKIT/xt018/cadence/v7_0/capTbl/v7_0_1/xt018_xx43_MET4_METMID_METTHK_typ.capTbl
+errorInfo: invalid command name "wet_attribute"
+    while executing
+"wet_attribute gdl_error_on_blackbox true"
+errorInfo: invalid command name "wet_attribute"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel $command"
+    invoked from within
+"source /home/student3/Bezrukov_V/Digital_ASIC/Scripts/X-FAB_typ.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel source $found_script"
+errorInfo: invalid command name "wet_attribute"
+    (procedure "include" line 9)
+    invoked from within
+"include /home/student3/Bezrukov_V/Digital_ASIC/Scripts/X-FAB_typ.tcl"
+invalid command name "wet_attribute"
+Encountered problems processing file: ../Scripts/MyModule_syn.tcl
+rc:/> 
